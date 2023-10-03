@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="pago.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="Registro_Tarjeta.php" method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">DIRECCIÓN DE FACTURACIÓN</h3>
+
+                <div class="inputBox">
+                    <span>Nombre Completo :</span>
+                    <input type="text" name="Nombre" placeholder="Nombre: " required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" name="Email" placeholder="example@example.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>Direccion :</span>
+                    <input type="text" name="Direccion" placeholder="Col. - Calle - No." required>
+                </div>
+                <div class="inputBox">
+                    <span>Ciudad: :</span>
+                    <input type="text" name="Ciudad" placeholder="Ciudad:" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Estado :</span>
+                        <input type="text" name="Estado" placeholder="Estado" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Codigo Postal :</span>
+                        <input type="text" name="CP" placeholder="00000" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Pago</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas Aceptadas :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre del titular :</span>
+                    <input type="text" name="Titular" placeholder="Titular:" required>
+                </div>
+                <div class="inputBox">
+                    <span>Numero de tarjeta :</span>
+                    <input type="number" name="Tarjeta" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>Mes de expiracion :</span>
+                    <input type="text" name="M_Exp" placeholder="MM" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Año de expiracion :</span>
+                        <input type="number" name="A_Exp" placeholder="YYYY" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" name="CVV" placeholder="1234" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Proceder con la compra" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>
